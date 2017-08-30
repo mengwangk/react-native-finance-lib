@@ -1,4 +1,4 @@
-package io.cmichel.boilerplate;
+package com.myinvesetor.finance;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
