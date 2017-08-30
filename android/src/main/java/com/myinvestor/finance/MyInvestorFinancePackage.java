@@ -1,4 +1,4 @@
-package com.myinvesetor.finance;
+package com.myinvestor.finance;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
