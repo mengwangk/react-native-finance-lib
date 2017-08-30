@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Package implements ReactPackage {
+public class MyInvestorFinancePackage implements ReactPackage {
 
     @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
@@ -27,7 +27,7 @@ public class Package implements ReactPackage {
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new Module(reactContext));
+        modules.add(new MyInvestorFinanceModule(reactContext));
 
         return modules;
     }
