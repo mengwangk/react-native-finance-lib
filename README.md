@@ -1,2 +1,2 @@
-# react-native-finance-lib
-React Native Android finance native module.
+## React Native Android Finance Library
+React Native Android native module used by myInvestor.

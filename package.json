@@ -1,0 +1,28 @@
+{
+  "name": "react-native-finance-lib",
+  "version": "0.0.1",
+  "author": "Koh Meng Wang https://mengwangk.github.io/",
+  "private": false,
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mengwangk/react-native-finance-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mengwangk/react-native-finance-lib/issues"
+  },
+  "homepage": "https://github.com/mengwangk/react-native-finance-lib",
+  "keywords": [
+    "react-native",
+    "android",
+    "library",
+    "finance"
+  ],
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.47.0"
+  }
+}
