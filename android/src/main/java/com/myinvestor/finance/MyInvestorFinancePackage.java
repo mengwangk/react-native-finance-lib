@@ -23,12 +23,9 @@ public class MyInvestorFinancePackage implements ReactPackage {
     }
 
     @Override
-    public List<NativeModule> createNativeModules(
-            ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
-
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+        final List<NativeModule> modules = new ArrayList<>();
         modules.add(new MyInvestorFinanceModule(reactContext));
-
         return modules;
     }
 }
