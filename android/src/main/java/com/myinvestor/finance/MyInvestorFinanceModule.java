@@ -11,28 +11,30 @@ import java.util.Map;
 
 public class MyInvestorFinanceModule extends ReactContextBaseJavaModule {
 
-  private static final String DURATION_SHORT_KEY = "SHORT";
-  private static final String DURATION_LONG_KEY = "LONG";
+    private static final String DURATION_SHORT_KEY = "SHORT";
+    private static final String DURATION_LONG_KEY = "LONG";
 
-  public MyInvestorFinanceModule(ReactApplicationContext reactContext) {
-    super(reactContext);
-  }
+    public MyInvestorFinanceModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+    }
 
-  @Override
-  public String getName() {
-    return "MyInvestorFinance";
-  }
+    @Override
+    public String getName() {
+        return "MyInvestorFinance";
+    }
 
-  @Override
-  public Map<String, Object> getConstants() {
-    final Map<String, Object> constants = new HashMap<>();
-    constants.put(DURATION_SHORT_KEY, Toast.LENGTH_SHORT);
-    constants.put(DURATION_LONG_KEY, Toast.LENGTH_LONG);
-    return constants;
-  }
+    @Override
+    public Map<String, Object> getConstants() {
+        final Map<String, Object> constants = new HashMap<>();
+        constants.put(DURATION_SHORT_KEY, Toast.LENGTH_SHORT);
+        constants.put(DURATION_LONG_KEY, Toast.LENGTH_LONG);
+        return constants;
+    }
 
-  @ReactMethod
-  public void show(String message, int duration) {
-    Toast.makeText(getReactApplicationContext(), message, duration).show();
-  }
+    @ReactMethod
+    public void toast(String message, int duration) {
+        Toast.makeText(getReactApplicationContext(), message, duration).show();
+    }
+
+
 }
