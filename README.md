@@ -38,14 +38,14 @@ You can install it as a library in your react native project.
             }
         }
         ```
-4. Simply `import/require` it by the name defined in your library's `package.json`:
+3. Simply `import/require` it by the name defined in your library's `package.json`:
 
     ```javascript
     import MyInvestorFinance from 'react-native-finance-lib'
     var response = await MyInvestorFinance.getStockPrice("6742.KL")
     ```
 
-5. Using redux-saga:
+4. Using redux-saga:
 
     ```javascript
     import MyInvestorFinance from 'react-native-finance-lib'
