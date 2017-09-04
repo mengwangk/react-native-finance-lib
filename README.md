@@ -42,5 +42,14 @@ You can install it as a library in your react native project.
 
     ```javascript
     import MyInvestorFinance from 'react-native-finance-lib'
-    MyInvestorFinance.getStockPrice("YTLPOWR")
+    var response = await MyInvestorFinance.getStockPrice("6742.KL")
     ```
+
+5. Using redux-saga:
+
+    ```javascript
+    import MyInvestorFinance from 'react-native-finance-lib'
+    const response = yield call(MyInvestorFinance.getStockPrice, "6742.KL");
+    ```
+
+
